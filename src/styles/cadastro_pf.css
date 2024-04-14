@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.appBar{
+    width: 100%;
+    height: 15vh;
+    background-color: #029E4F;
+    display: flex;
+}
+
+.image_voltar_appBar{
+    position: relative;
+    top: 15%;
+    left: 2%;
+    height: 65px;
+    width: 65px;
+}
+
+.title_appBar{
+    font-size: 32px;
+    color: white;
+    margin-left: 37%;
+    margin-top: 2%;
+}
+
+.formulario{
+    width: 80%;
+    margin: 5px;
+    margin-left: 10%;
+    margin-top: 50px;
+    display: inline-flex;
+}
+
+label{
+    font-size: 20px;
+    color: darkslategray;
+}
+
+form{
+    width: 100%;
+    display: inline-flex;
+}
+
+.cont1{
+    width: 49%;
+    height: 70vh;
+}
+
+.cont2{
+    width: 49%;
+    height: 70vh;
+    margin-left: 2%;
+}
+
+.style_input_form{
+    width: 100%;
+    height: 4vh;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: gray;
+    padding-left: 5px;
+}
+.special_input_form1{
+    width: 70%;
+    height: 4vh;
+    border-radius: 8px;
+    border-color: gray;
+    border-style: solid;
+    padding-left: 5px;
+}
+
+.special_input_form2{
+    width: 70%;
+    height: 4vh;
+    border-radius: 8px;
+    border-color: gray;
+    border-style: solid;
+    padding-left: 5px;
+    margin-left: 8px;
+}
+
+.menor_special_input_form1{
+    width: 25%;
+    height: 4vh;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: gray;
+    padding-left: 5px;
+    margin-left: 8px;
+}
+.menor_special_input_form2{
+    width: 25%;
+    height: 4vh;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: gray;
+    padding-left: 5px;
+}
+
+.save_button_input_form{
+    width: 25%;
+    height: 4vh;
+    background-color: white;
+    border-radius: 8px;
+    border-color: #029E4F;
+    border-style: solid;
+    font-size: 17px;
+    color: darkslategray;
+    position: relative;
+    left: 75%;
+}
+
+.save_button_input_form:hover{
+    transition: 0.3;
+    background-color: #029E4F;
+    color: white;
+}
+
+.numero_input_form{
+    position: relative;
+    left: 60%;
+}
