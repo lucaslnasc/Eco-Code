@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/redefinir_senha.css">
     <title>Redefinir Senha</title>
 </head>
+
 <body>
     <div class="container">
         <div class="conteudo">
@@ -16,7 +18,7 @@
                     <div class="cont">
                         <label class="label_form_input">CPF</label>
                         <br>
-                        <input class="input_form" type="number" name="cpf" id="cpf">
+                        <input class="input_form" type="text" name="cpf" id="cpf" maxlength="14">
                     </div>
                     <div class="cont">
                         <label class="label_form_input">E-mail</label>
@@ -26,18 +28,22 @@
                     <div class="cont">
                         <label class="label_form_input">Insira uma nova senha</label>
                         <br>
-                        <input class="input_form" type="password" name="senha" id="senha">
+                        <input class="input_form" type="password" name="senha" id="senha" maxlength="20">
                     </div>
                     <div class="cont">
                         <label class="label_form_input">Insira novamente</label>
                         <br>
-                        <input class="input_form" type="password" name="senha" id="senha">
+                        <input class="input_form" type="password" name="senha" id="senha" maxlength="20">
                     </div>
                     <br>
+
                     <input class="sub" type="submit" value="Salvar">
                 </div>
             </form>
+            <button class="backInIndex" onclick="BackInIndex()">Voltar</button>
         </div>
+        <script src="../js/redefinir_senha.js"></script>
     </div>
 </body>
+
 </html>

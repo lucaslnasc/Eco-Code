@@ -10,6 +10,7 @@
 <body>
     <div class="container">
         <nav class="appBar">
+            <img class="image_voltar_appBar" src="../img/de-volta.png" onclick="BackInIndex()">
             <h1 class="title_appBar">CADASTRE-SE</h1>
         </nav>
         <div class="body_div_buttons">
@@ -18,26 +19,30 @@
                     <p>Tipo de cadastro</p>
                 </div>
                 <div class="button_acess">
-                    <button class="bt">
+                    <button class="bt" onclick="CadastroPF()">
                         <img class="img_button" src="../img/pessoa.png">
                         <h2 class="h2_button">Pessoa Física</h2>
                     </button>
                 </div>
                 <div class="button_acess">
-                    <button class="bt">
+                    <button class="bt" onclick="CadastroEP()">
                         <img class="img_button" src="../img/escritorio.png">
                         <h2 class="h2_button">Empresa/Prefeitura</h2>
                     </button>
                 </div>
                 <p class="position_suport">Problema ao se cadastrar?</p>
                 <div class="button_acess">
-                    <button class="bt">
+                    <button class="bt" onclick="Suporte()">
                         <img class="img_button" src="../img/suporte-online.png">
                         <h2 class="h2_button">Suporte</h2>
                     </button>
                 </div>
             </div>
         </div>
+        <script src="../js/cadastro_pf.js"></script>
+        <script src="../js/cadastro_e_p.js"></script>
+        <script src="../js/suporte.js"></script>
+        <script src="../js/cadastre_se.js"></script>
     </div>
 </body>
 </html>

@@ -3,6 +3,10 @@ function BackIn(){
     location.href = '../views/cadastre-se.html'
 }
 
+function CadastroPF() {
+    location.href = '../views/cadastro_pf.html'
+}
+
 // função para fazer validações
 
 function validate() {
