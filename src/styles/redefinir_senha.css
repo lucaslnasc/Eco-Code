@@ -1,21 +1,21 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
+.container {
     width: 100%;
     box-sizing: border-box;
 }
 
-.conteudo{
+.conteudo {
     width: 100%;
     height: 100vh;
     background-color: white;
 }
 
-.formulario{
+.formulario {
     width: 40%;
     height: 80vh;
     background-color: #029E4F;
@@ -24,7 +24,8 @@
     left: 30%;
     border-radius: 20px;
 }
-p{
+
+p {
     text-align: center;
     position: relative;
     top: 5%;
@@ -33,21 +34,21 @@ p{
     color: white;
 }
 
-.div_form_inputs{
+.div_form_inputs {
     width: 100%;
     height: 55vh;
     position: relative;
     top: 10%;
 }
 
-.label_form_input{
+.label_form_input {
     font-size: 18px;
     position: relative;
     left: 8.5%;
     color: white;
 }
 
-.input_form{
+.input_form {
     width: 80%;
     position: relative;
     left: 8%;
@@ -59,16 +60,16 @@ p{
     font-size: 15px;
 }
 
-.cont{
+.cont {
     position: relative;
     margin-top: 20px;
 }
 
-.sub{
-    width: 40%;
+.sub {
+    width: 35%;
     height: 5vh;
     position: relative;
-    left: 30%;
+    left: 55%;
     top: 10%;
     border-radius: 8px;
     border-style: solid;
@@ -77,9 +78,29 @@ p{
     font-size: 17px;
 }
 
-.sub:hover{
+.sub:hover {
     transition: .3s;
-    background-color: #029E4F;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+.backInIndex{
+    width: 14%;
+    height: 5vh;
+    position: relative;
+    left: 33.5%;
+    bottom: 5.5%;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: red;
+    background-color: white;
+    font-size: 17px;
+}
+
+.backInIndex:hover{
+    transition: .3s;
+    background-color: transparent;
     border-color: white;
     color: white;
 }
