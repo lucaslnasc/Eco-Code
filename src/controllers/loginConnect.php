@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $query->execute();
 
-        header('Location: ../');
+        header('Location: ../views/home.html');
         exit;
     } catch (PDOException $e) {
         die("Erro ao inserir usuário: " . $e->getMessage());

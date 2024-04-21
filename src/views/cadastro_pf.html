@@ -63,7 +63,13 @@
           <div class="cont2">
             <label>CPF</label>
             <br />
-            <input class="style_input_form" type="text" name="cpf" id="cpf" />
+            <input
+              class="style_input_form"
+              type="text"
+              name="cpf"
+              id="cpf"
+              maxlength="14"
+            />
             <br /><br /><br />
             <label>NÚMERO DE TELEFONE</label>
             <br />
@@ -113,13 +119,15 @@
 
             <input
               class="save_button_input_form"
-              type="button"
+              type="submit"
               value="Salvar"
-              onclick="validarForm()"
             />
           </div>
-
         </form>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+        <script src="../js/cadastro_pf.js"></script>
       </div>
     </div>
   </body>

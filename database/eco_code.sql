@@ -10,9 +10,11 @@ CREATE TABLE citizen(
     ddd VARCHAR (3) NOT NULL,
     telefone VARCHAR (11) NOT NULL,
     senha VARCHAR (20) NOT NULL,
-    cep VARCHAR (8) NOT NULL,
+    cep VARCHAR (9) NOT NULL,
     endereco VARCHAR(50) NOT NULL,
     bairro VARCHAR(50) NOT NULL,
     num INT(3) NOT NULL,
     cidade VARCHAR(20) NOT NULL
 );
+
+SELECT * FROM citizen;
