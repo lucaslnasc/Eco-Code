@@ -1,42 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
-        <link rel="stylesheet" href="../styles/index.css">
-    </head>
-    <body>
-        <form action="">
-            <div class="div_pai">
-                <div class="div_filho">
-                    <img src="../img/image.png" alt="" class="icone_projeto">
-
-                    <div class="div_titulo">
-                        <label for="" class="titulo"><b>Acessar</b></label>
-                    </div>
-
-                    <div class="div_acesso_cpf">
-                        <input name="" type="text" minlength="1" maxlength="11" class="input_acesso_cpf" placeholder="CPF">
-                    </div>
-
-                    <div class="div_acesso_senha">
-                        <input name="" type="password" minlength="1" class="input_acesso_senha" placeholder="Senha">
-                    </div>
-
-                    <div class="div_linkOne">
-                        <a class="link_recuperacao" href="../views/redefinir_senha.html">Esqueceu a senha?</a>
-                    </div>
-
-                    <div class="div_linkTwo">
-                        <a class="link_cadastro" href="../views/cadastro_pf.html">Cadastre-se</a>
-                    </div>
-
-                    <div class="div_botao">
-                        <input name="" type="button" value="OK" class="botao_acesso">
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cont_image">
+            <img class="img_logo" src="../img/image.png " alt="Imagem da logo do projeto">
+        </div>
+        <div class="form_login_cont">
+            <p class="title_form">Acessar</p>
+            <br>
+            <form action="" method="post">
+                <input class="input_form" type="text" name="cpf" id="cpf" placeholder="CPF">
+                <br>
+                <input class="input_form" type="password" name="senha" id="senha" placeholder="SENHA">
+                <br>
+                <div class="link_redirection">
+                    <a class="link1" href="redefinir_senha.html">Redefinir senha</a>
+                    <a class="link2" href="cadastre-se.html">Cadastre-se</a>
                 </div>
-            </div>
-        </form>
-    </body>
+                <input class="submit_input_form" type="submit" value="Entrar">
+            </form>
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
 </html>

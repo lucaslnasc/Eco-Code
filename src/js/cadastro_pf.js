@@ -1,6 +1,6 @@
 // função para redirecionamento
-function BackIn(){
-    location.href = '../views/cadastre-se.html'
+function BackInToCadastreSe() {
+    location.href = './cadastre-se.html'
 }
 
 function CadastroPF() {
