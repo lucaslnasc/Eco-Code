@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../styles/cadastro_pf.css" />
+  <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon">
   <title>Cadastro Pessoa Física</title>
 </head>
 
@@ -12,12 +13,12 @@
   <div class="container">
 
     <nav class="appBar">
-      <img class="image_voltar_appBar" src="../img/de-volta.png" onclick="BackIn()">
+      <img class="image_voltar_appBar" src="../img/de-volta.png" onclick="BackInToCadastreSe()">
       <h1 class="title_appBar">PESSOA FÍSICA</h1>
     </nav>
 
     <div class="formulario">
-      <form action="" method="post" id="cadastroForm">
+      <form action="../controllers/loginConnect.php" method="post" id="cadastroForm">
         <div class="cont1">
           <label>NOME COMPLETO</label>
           <br />
@@ -68,11 +69,16 @@
           <input class="style_input_form" type="password" name="confirmar_senha" id="confirmar_senha" />
           <br /><br /><br />
 
-          <input class="save_button_input_form" type="submit" value="Salvar">
+          <input class="save_button_input_form" type="button" value="Salvar" onclick="validarForm()" />
         </div>
+
+        <script>
+          function BackInToCadastreSe() {
+            location.href = '../views/cadastre-se.html'
+          }
+        </script>
       </form>
     </div>
-    <script src="../js/cadastro_pf.js"></script>
   </div>
 </body>
 

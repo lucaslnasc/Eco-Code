@@ -1,669 +1,84 @@
-body {
+*{
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.div_pai {
+.container{
+    width: 100%;
+}
+
+.cont_image{
+    width: 10%;
+    position: relative;
+    left: 45%;
+    margin-top: 2%;
+}
+
+.img_logo{
+    width: 100%;
+}
+
+.form_login_cont{
+    margin-top: 10px;
+    width: 40%;
+    height: 70vh;
+    position: relative;
+    left: 30%;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.title_form{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+.input_form{
+    width: 80%;
+    height: 5vh;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: gray;
     background-color: white;
-    width: 100%;
-    height: 100vh;
+    margin-top: 50px;
+    position: relative;
+    left: 10%;
+    padding: 5px;
 }
 
-.div_filho {
-    width: 45%;
-    height: 80vh;
-    transform: translate(60%, 11%);
-    border-radius: 22px;
-    padding: 10px;
-}
-
-.icone_projeto {
-    width: 20%;
-    height: 90px;
-    transform: translate(200%, 40%)
-}
-
-.titulo {
-    font-family: Arial;
-    font-size: 20px;
-}
-
-.div_titulo {
-    transform: translate(43.8%, 300%);
-    width: 100%;
-}
-
-.div_acesso_cpf {
-    height: 10vh;
-    padding: 5%;
-    width: 50%;
-    transform: translate(35%, 60%);
-}
-
-.input_acesso_cpf {
-    width: 95%;
-    height: 4vh;
-    font-family: Arial;
-    font-size: 16px;
-}
-
-.div_acesso_senha {
-    padding: 5%;
-    width: 50%;
-    transform: translate(35%, 45%);
-}
-
-.input_acesso_senha {
-    width: 95%;
-    height: 4vh;
-    font-family: Arial;
-    font-size: 16px;
-}
-
-.div_linkOne {
-    width: 20%;
-    transform: translate(130%, 130%);
-}
-
-a {
-    font-family: Arial;
-    font-size: 14px;
-    color: #029E4F;
-}
-
-.div_linkTwo {
-    width: 20%;
-    transform: translate(315%, 31%);
-}
-
-.div_botao {
+.submit_input_form{
     width: 30%;
     height: 5vh;
-    transform: translate(115%, 170%);
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #029E4F;
+    background-color: white;
+    position: relative;
+    top: 50px;
+    color: darkslategray;
+    left: 35%;
+    font-size: 17px;
 }
 
-.botao_acesso {
-    width: 40%;
-    height: 30px;
-    transform: translate(70%, 10%);
+.link_redirection{
+    width: 80%;
+    position: relative;
+    left: 10%;
+    top: 10px;
+}
+
+.link1 {}
+
+.link2{
+    position: relative;
+    left: 60%;
+}
+
+.submit_input_form:hover {
+    transition: 0.3;
     background-color: #029E4F;
-    font-family: Arial;
-    font-size: 16px;
     color: white;
-}
-
-@media only screen and (min-width: 1100px) and (max-width: 1375px) {
-    body {
-        padding: 0;
-        margin: 0;
-    }
-
-    .div_pai {
-        background-color: white;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .div_filho {
-        width: 45%;
-        height: 80vh;
-        transform: translate(60%, 11%);
-        border-radius: 22px;
-        padding: 10px;
-    }
-
-    .icone_projeto {
-        width: 20%;
-        height: 90px;
-        transform: translate(205%, 40%)
-    }
-
-    .titulo {
-        font-family: Arial;
-        font-size: 20px;
-    }
-
-    .div_titulo {
-        transform: translate(44%, 305%);
-        width: 100%;
-    }
-
-    .div_acesso_cpf {
-        height: 10vh;
-        padding: 5%;
-        width: 50%;
-        transform: translate(35%, 60%);
-    }
-
-    .input_acesso_cpf {
-        width: 95%;
-        height: 4vh;
-        font-family: Arial;
-        font-size: 16px;
-    }
-
-    .div_acesso_senha {
-        padding: 5%;
-        width: 50%;
-        transform: translate(35%, 45%);
-    }
-
-    .input_acesso_senha {
-        width: 95%;
-        height: 4vh;
-        font-family: Arial;
-        font-size: 16px;
-    }
-
-    .div_linkOne {
-        width: 20%;
-        transform: translate(130%, 80%);
-    }
-
-    a {
-        font-family: Arial;
-        font-size: 14px;
-        color: #029E4F;
-    }
-
-    .div_linkTwo {
-        width: 20%;
-        transform: translate(310%, -40%);
-    }
-
-    .div_botao {
-        width: 30%;
-        height: 5vh;
-        transform: translate(120%, 130%);
-    }
-
-    .botao_acesso {
-        width: 40%;
-        height: 30px;
-        transform: translate(70%, 10%);
-        background-color: #029E4F;
-        font-family: Arial;
-        font-size: 16px;
-        color: white;
-    }
-}
-
-@media only screen and (min-width: 900px) and (max-width: 1100px) {
-    body {
-        padding: 0;
-        margin: 0;
-    }
-
-    .div_pai {
-        background-color: white;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .div_filho {
-        width: 45%;
-        height: 80vh;
-        transform: translate(60%, 11%);
-        border-radius: 22px;
-        padding: 10px;
-    }
-
-    .icone_projeto {
-        width: 20%;
-        height: 90px;
-        transform: translate(210%, 40%)
-    }
-
-    .titulo {
-        font-family: Arial;
-        font-size: 20px;
-    }
-
-    .div_titulo {
-        transform: translate(44%, 305%);
-        width: 100%;
-    }
-
-    .div_acesso_cpf {
-        height: 10vh;
-        padding: 5%;
-        width: 50%;
-        transform: translate(32.5%, 65%);
-    }
-
-    .input_acesso_cpf {
-        width: 105%;
-        height: 4vh;
-        font-family: Arial;
-        font-size: 16px;
-    }
-
-    .div_acesso_senha {
-        padding: 5%;
-        width: 50%;
-        transform: translate(32.5%, 55%);
-    }
-
-    .input_acesso_senha {
-        width: 105%;
-        height: 4vh;
-        font-family: Arial;
-        font-size: 16px;
-    }
-
-    .div_linkOne {
-        width: 20%;
-        transform: translate(122%, 95%);
-    }
-
-    a {
-        font-family: Arial;
-        font-size: 14px;
-        color: #029E4F;
-    }
-
-    .div_linkTwo {
-        width: 20%;
-        transform: translate(310%, -20%);
-    }
-
-    .div_botao {
-        width: 30%;
-        height: 5vh;
-        transform: translate(110%, 130%);
-    }
-
-    .botao_acesso {
-        width: 50%;
-        height: 30px;
-        transform: translate(70%, 10%);
-        background-color: #029E4F;
-        font-family: Arial;
-        font-size: 16px;
-        color: white;
-    }
-}
-
-@media only screen and (min-width: 850px) and (max-width: 900px) {
-    body {
-        padding: 0;
-        margin: 0;
-    }
-
-    .div_pai {
-        background-color: white;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .div_filho {
-        width: 45%;
-        height: 80vh;
-        transform: translate(60%, 11%);
-        border-radius: 22px;
-        padding: 10px;
-    }
-
-    .icone_projeto {
-        width: 25%;
-        height: 90px;
-        transform: translate(150%, 40%)
-    }
-
-    .titulo {
-        font-family: Arial;
-        font-size: 20px;
-    }
-
-    .div_titulo {
-        transform: translate(40%, 305%);
-        width: 100%;
-    }
-
-    .div_acesso_cpf {
-        height: 10vh;
-        padding: 5%;
-        width: 50%;
-        transform: translate(22%, 75%);
-    }
-
-    .input_acesso_cpf {
-        width: 120%;
-        height: 4vh;
-        font-family: Arial;
-        font-size: 16px;
-    }
-
-    .div_acesso_senha {
-        padding: 5%;
-        width: 50%;
-        transform: translate(22%, 70%);
-    }
-
-    .input_acesso_senha {
-        width: 120%;
-        height: 4vh;
-        font-family: Arial;
-        font-size: 16px;
-    }
-
-    .div_linkOne {
-        width: 20%;
-        transform: translate(93%, 120%);
-    }
-
-    a {
-        font-family: Arial;
-        font-size: 14px;
-        color: #029E4F;
-    }
-
-    .div_linkTwo {
-        width: 20%;
-        transform: translate(300%, 40%);
-    }
-
-    .div_botao {
-        width: 30%;
-        height: 5vh;
-        transform: translate(90%, 190%);
-    }
-
-    .botao_acesso {
-        width: 60%;
-        height: 30px;
-        transform: translate(70%, 10%);
-        background-color: #029E4F;
-        font-family: Arial;
-        font-size: 16px;
-        color: white;
-    }
-}
-
-@media only screen and (min-width: 750px) and (max-width: 850px) {
-    body {
-        padding: 0;
-        margin: 0;
-    }
-
-    .div_pai {
-        background-color: white;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .div_filho {
-        width: 45%;
-        height: 80vh;
-        transform: translate(60%, 11%);
-        border-radius: 22px;
-        padding: 10px;
-    }
-
-    .icone_projeto {
-        width: 25%;
-        height: 90px;
-        transform: translate(160%, 40%)
-    }
-
-    .titulo {
-        font-family: Arial;
-        font-size: 18px;
-    }
-
-    .div_titulo {
-        transform: translate(44%, 340%);
-        width: 100%;
-    }
-
-    .div_acesso_cpf {
-        height: 10vh;
-        padding: 5%;
-        width: 65%;
-        transform: translate(20%, 75%);
-    }
-
-    .input_acesso_cpf {
-        width: 95%;
-        height: 4vh;
-        font-family: Arial;
-        font-size: 16px;
-    }
-
-    .div_acesso_senha {
-        padding: 5%;
-        width: 65%;
-        transform: translate(20%, 85%);
-    }
-
-    .input_acesso_senha {
-        width: 95%;
-        height: 4vh;
-        font-family: Arial;
-        font-size: 16px;
-    }
-
-    .div_linkOne {
-        width: 25%;
-        transform: translate(80%, 150%);
-    }
-
-    a {
-        font-family: Arial;
-        font-size: 14px;
-        color: #029E4F;
-    }
-
-    .div_linkTwo {
-        width: 30%;
-        transform: translate(210%, 100%);
-    }
-
-    .div_botao {
-        width: 30%;
-        height: 5vh;
-        transform: translate(110%, 190%);
-    }
-
-    .botao_acesso {
-        width: 55%;
-        height: 30px;
-        transform: translate(70%, 10%);
-        background-color: #029E4F;
-        font-family: Arial;
-        font-size: 16px;
-        color: white;
-    }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 750px) {
-    body {
-        padding: 0;
-        margin: 0;
-    }
-
-    .div_pai {
-        background-color: white;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .div_filho {
-        width: 45%;
-        height: 80vh;
-        transform: translate(60%, 11%);
-        border-radius: 22px;
-        padding: 10px;
-    }
-
-    .icone_projeto {
-        width: 30%;
-        height: 90px;
-        transform: translate(110%, 40%)
-    }
-
-    .titulo {
-        font-family: Arial;
-        font-size: 18px;
-    }
-
-    .div_titulo {
-        transform: translate(37%, 330%);
-        width: 100%;
-    }
-
-    .div_acesso_cpf {
-        height: 10vh;
-        padding: 5%;
-        width: 50%;
-        transform: translate(15%, 80%);
-    }
-
-    .input_acesso_cpf {
-        width: 135%;
-        height: 4vh;
-        font-family: Arial;
-        font-size: 16px;
-    }
-
-    .div_acesso_senha {
-        padding: 5%;
-        width: 50%;
-        transform: translate(15%, 90%);
-    }
-
-    .input_acesso_senha {
-        width: 135%;
-        height: 4vh;
-        font-family: Arial;
-        font-size: 16px;
-    }
-
-    .div_linkOne {
-        width: 35%;
-        transform: translate(40%, 150%);
-    }
-
-    a {
-        font-family: Arial;
-        font-size: 14px;
-        color: #029E4F;
-    }
-
-    .div_linkTwo {
-        width: 30%;
-        transform: translate(200%, 100%);
-    }
-
-    .div_botao {
-        width: 30%;
-        height: 5vh;
-        transform: translate(65%, 190%);
-    }
-
-    .botao_acesso {
-        width: 80%;
-        height: 30px;
-        transform: translate(70%, 10%);
-        background-color: #029E4F;
-        font-family: Arial;
-        font-size: 16px;
-        color: white;
-    }
-}
-
-@media only screen and (min-width: 250px) and (max-width: 600px) {
-    body {
-        padding: 0;
-        margin: 0;
-    }
-
-    .div_pai {
-        background-color: white;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .div_filho {
-        width: 45%;
-        height: 80vh;
-        transform: translate(60%, 11%);
-        border-radius: 22px;
-        padding: 10px;
-    }
-
-    .icone_projeto {
-        width: 35%;
-        height: 90px;
-        transform: translate(75%, 40%)
-    }
-
-    .titulo {
-        font-family: Arial;
-        font-size: 18px;
-    }
-
-    .div_titulo {
-        transform: translate(30%, 370%);
-        width: 100%;
-    }
-
-    .div_acesso_cpf {
-        height: 10vh;
-        padding: 5%;
-        width: 50%;
-        transform: translate(-5%, 90%);
-    }
-
-    .input_acesso_cpf {
-        width: 160%;
-        height: 4vh;
-        font-family: Arial;
-        font-size: 16px;
-    }
-
-    .div_acesso_senha {
-        padding: 5%;
-        width: 50%;
-        transform: translate(-5%, 120%);
-    }
-
-    .input_acesso_senha {
-        width: 160%;
-        height: 4vh;
-        font-family: Arial;
-        font-size: 16px;
-    }
-
-    .div_linkOne {
-        width: 35%;
-        transform: translate(5%, 190%);
-    }
-
-    a {
-        font-family: Arial;
-        font-size: 14px;
-        color: #029E4F;
-    }
-
-    .div_linkTwo {
-        width: 50%;
-        transform: translate(110%, 180%);
-    }
-
-    .div_botao {
-        width: 30%;
-        height: 5vh;
-        transform: translate(50%, 220%);
-    }
-
-    .botao_acesso {
-        width: 80%;
-        height: 30px;
-        transform: translate(70%, 10%);
-        background-color: #029E4F;
-        font-family: Arial;
-        font-size: 16px;
-        color: white;
-    }
 }
