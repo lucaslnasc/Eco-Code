@@ -7,3 +7,5 @@ function Suporte() {
 function BackInSuport(){
     location.href = '../views/cadastre-se.html'
 }
+
+// testando commit
