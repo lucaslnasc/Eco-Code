@@ -1,7 +1,7 @@
 // Defina uma função para lidar com o redirecionamento para o WhatsApp
 function redirectToWhatsApp() {
     // Número de telefone para o WhatsApp
-    var phoneNumber = "5527988045322"; // Adicione o código do país antes do número
+    var phoneNumber = "27999943806"; // Adicione o código do país antes do número
 
     // Construa o URL do WhatsApp com o número de telefone
     var whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber;

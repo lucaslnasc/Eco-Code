@@ -43,3 +43,8 @@ function VoltarHomeParaIndex(){
 function VoltarReportarParaHome() {
     location.href = '../views/home.html'
 }
+
+// FUNÇÃO DA TELA DE TABELA DE REPORT PARA HOME EMPRESA
+function VoltarTabelaParaHomeEmpresa() {
+    location.href = '../views.home_empresa.html'
+}

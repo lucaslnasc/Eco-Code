@@ -105,15 +105,41 @@ form{
 
 .ocorrido_text_area{
     width: 98%;
-    height: 30vh;
+    height: 29vh;
     padding: 5px;
     border-radius: 8px;
     background-color: white;                 
 }
 
-label[for='n']{
+label[for='n'] {
     font-size: 20px;
     color: darkslategray;
     position: relative;
     left: 64%;
+}
+
+.save_button_input_form{
+    width: 25%;
+    height: 5vh;
+    padding: 3px;
+    background-color: white;
+    border-radius: 8px;
+    border-color: #029E4F;
+    border-style: solid;
+    font-size: 17px;
+    color: darkslategray;
+    position: relative;
+    left: 75%;
+}
+
+.save_button_input_form:hover{
+    transition: 0.3;
+    background-color: #029E4F;
+    color: white;
+}
+
+.space_img{
+    height: 10px;
+    height: 10px;
+    background-color: orange;
 }

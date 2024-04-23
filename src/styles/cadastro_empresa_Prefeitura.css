@@ -107,7 +107,8 @@ form{
 
 .save_button_input_form{
     width: 25%;
-    height: 4vh;
+    height: 5vh;
+    padding: 3px;
     background-color: white;
     border-radius: 8px;
     border-color: #029E4F;
