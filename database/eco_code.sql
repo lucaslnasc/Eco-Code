@@ -9,7 +9,7 @@ CREATE TABLE citizen(
     cpf CHAR (14) NOT NULL UNIQUE,
     ddd VARCHAR (3) NOT NULL,
     telefone VARCHAR (11) NOT NULL,
-    senha VARCHAR (20) NOT NULL,
+    senha VARCHAR (100) NOT NULL,
     cep VARCHAR (9) NOT NULL,
     endereco VARCHAR(50) NOT NULL,
     bairro VARCHAR(50) NOT NULL,
