@@ -27,7 +27,7 @@
 .title_appBar{
     font-size: 32px;
     color: white;
-    margin-left: 37.5%;
+    margin-left: 42%;
     margin-top: 2%;
 }
 
@@ -55,7 +55,7 @@
 .button_acess{
     width: 100%;
     height: 15vh;
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 .bt{
@@ -70,7 +70,14 @@
 .img_button{
     width: 15%;
     position: relative;
-    top: 5%;
+    top: 6%;
+    left: 20%;
+}
+
+.img_button2{
+    width: 15%;
+    position: relative;
+    top: 10%;
     left: 20%;
 }
 
@@ -83,6 +90,16 @@
 
 .position_suport{
     position: relative;
-    top: 3%;
+    top: 4%;
     left: 35%;
+}
+
+.icone_user{
+    width: 46%;
+    height: 14vh;
+}
+
+.icone_user2{
+    height: 14vh;
+    transform: translate(530%);
 }
