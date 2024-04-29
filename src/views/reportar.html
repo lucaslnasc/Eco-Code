@@ -1,3 +1,90 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/reportar.css" />
+  <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon">
+  <title>Reportar</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <nav class="appBar">
+      <img class="image_voltar_appBar" src="../img/de-volta.png" onclick="BackInToCadastreSe()">
+      <h1 class="title_appBar">Reportar</h1>
+    </nav>
+
+    <div class="formulario">
+      <form action="../controllers/loginConnect.php" method="post" id="cadastroForm">
+        <div class="cont1">
+          <label>NOME COMPLETO</label>
+          <br />
+          <input class="style_input_form" type="text" name="nome" id="nome" />
+          <br /><br /><br />
+          <label>E-MAIL</label>
+          <br />
+          <input class="style_input_form" type="email" name="email" id="email" />
+          <br /><br /><br />
+          <label>CEP</label>
+          <br />
+          <input class="style_input_form" type="text" name="cep" id="cep" />
+          <br /><br /><br />
+
+          <label>BAIRRO</label>
+          <label class="numero_input_form">Nº</label>
+          <br />
+          <input class="special_input_form1" type="text" name="bairro" id="bairro" />
+          <input class="menor_special_input_form1" type="text" name="n" id="n" />
+          <br /><br /><br />
+
+          <label>SENHA</label>
+          <br />
+          <input class="style_input_form" type="password" name="Senha" id="senha" />
+        </div>
+        <div class="cont2">
+          <label>CPF</label>
+          <br />
+          <input class="style_input_form" type="text" name="cpf" id="cpf" />
+          <br /><br /><br />
+          <label>NÚMERO DE TELEFONE</label>
+          <br />
+          <input class="menor_special_input_form2" type="text" name="ddd" id="ddd" maxlength="3"
+            placeholder="DDD +55" />
+          <input class="special_input_form2" type="text" name="telefone" id="telefone" />
+          <br /><br /><br />
+          <label>ENDEREÇO</label>
+          <br />
+          <input class="style_input_form" type="text" name="endereco" id="endereco" />
+          <br /><br /><br />
+          <label>CIDADE</label>
+          <br />
+          <input class="style_input_form" type="text" name="cidade" id="cidade" />
+          <br /><br /><br />
+
+          <label>CONFIRMAR SENHA</label>
+          <br />
+          <input class="style_input_form" type="password" name="confirmar_senha" id="confirmar_senha" />
+          <br /><br /><br />
+
+          <input class="save_button_input_form" type="button" value="Salvar" onclick="validarForm()" />
+        </div>
+
+        <script>
+          function BackInToCadastreSe() {
+            location.href = '../views/cadastre-se.html'
+          }
+        </script>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
+=======
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -68,3 +155,4 @@
     <script src="../js/redirection.js"></script>
 </body>
 </html>
+>>>>>>> c979a5f0617307fb1c196cee8e5aae057048a83c
