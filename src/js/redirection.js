@@ -46,5 +46,25 @@ function VoltarReportarParaHome() {
 
 // FUNÇÃO DA TELA DE TABELA DE REPORT PARA HOME EMPRESA
 function VoltarTabelaParaHomeEmpresa() {
-    location.href = '../views.home_empresa.html'
+    location.href = '../views/Home_Empresas.html'
+}
+
+// FUNÇÃO DA TELA DE HOME EMPRESAS PARA LOGIN
+function VoltarDeHomeEmpresasParaLogin() {
+    location.href = '../views/index.html'
+}
+
+// FUNÇÃO DE TELA DE HOME EMPRESAS PARA TABELA DE REPORT
+function AcessoHomeEmpresasParaTabelaReport() {
+    location.href = '../views/tabela_report.html'
+}
+
+// FUNÇÃO DE TELA DE HOME EMPRESAS PARA CONFIGURAÇÕES
+function AcessoHomeEmpresasParaConfiguracoes() {
+    location.href = '../views/configuracoes.html'
+}
+
+// FUNÇÃO DE TELA DE HOME EMPRESAS PARA CONTA
+function AcessoHomeEmpresasParaConta() {
+    location.href = '../views/conta.html'
 }

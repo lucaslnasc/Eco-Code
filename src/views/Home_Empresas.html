@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <nav class="appBar">
-            <img class="image_voltar_appBar" src="../img/de-volta.png" onclick="BackInIndex()">
+            <img class="image_voltar_appBar" src="../img/de-volta.png" onclick="VoltarDeHomeEmpresasParaLogin()">
             <h1 class="title_appBar">Início</h1>
             <div class="icone_user">
                 <img src="../img/icone_user.png" alt="" class="icone_user2">
@@ -19,26 +19,27 @@
         <div class="body_div_buttons">
             <div class="cont">
                 <div class="button_acess">
-                    <button class="bt" onclick="">
+                    <button class="bt" onclick="AcessoHomeEmpresasParaTabelaReport()">
                         <img class="img_button" src="../img/pessoa.png">
                         <h2 class="h2_button">REPORTES RECEBIDOS</h2>
                     </button>
                 </div>
                 <div class="button_acess">
-                    <button class="bt" onclick="">
-                        <img class="img_button2" src="../img/Engrenagem.png">
+                    <button class="bt" onclick="AcessoHomeEmpresasParaConfiguracoes()">
+                        <img class="img_button2" src="../img/engrenagem (1).png">
                         <h2 class="h2_button">CONFIGURAÇÃO</h2>
                     </button>
                 </div>
                 <p class="position_suport">Instabilidade no aplicativo?</p>
                 <div class="button_acess">
-                    <button class="bt" onclick="">
+                    <button class="bt" onclick="AcessoHomeEmpresasParaConta()">
                         <img class="img_button" src="../img/suporte-online.png">
                         <h2 class="h2_button">Suporte</h2>
                     </button>
                 </div>
             </div>
         </div>
+        <script src="../js/redirection.js"></script>
     </div>
 </body>
 </html>
