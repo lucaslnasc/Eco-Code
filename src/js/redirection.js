@@ -68,3 +68,8 @@ function AcessoHomeEmpresasParaConfiguracoes() {
 function AcessoHomeEmpresasParaConta() {
     location.href = '../views/conta.html'
 }
+
+// FUNÇÃO DE TELA DE CONFIGURAÇÕES PARA HOME EMPRESAS
+function VoltarDeConfParaHomeEmpresas() {
+    location.href = '../views/Home_Empresas.html'
+}
