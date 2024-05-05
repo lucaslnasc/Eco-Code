@@ -49,8 +49,9 @@
 
 .tabela {
     width: 90%;
-    height: 60vh;
+    height: 70vh;
     position: relative;
     left: 5%;
+    top: 10%;
     background-color: yellow;
 }
