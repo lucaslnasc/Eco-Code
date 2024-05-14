@@ -52,12 +52,28 @@ label{
     color: darkslategrey;
 }
 
-.img_div{
-    width: 100%;
-    text-align: center;
-    height: 100px;
+.lateral_right{
+    transform: translate(1750%, -450px);
+    width: 5%;
 }
 
-.logo{
-    width: 90px;
+.bt_one{
+    margin: 25px;
+    background-color: white;
+    border-style: none;
+}
+
+.bt{
+    margin: 23px;
+    background-color: white;
+    border-style: none;
+}
+
+.img_lapis{
+    height: 15px;
+    width: 15px;
+}
+
+.childrens_container{
+    height: 0px;
 }
