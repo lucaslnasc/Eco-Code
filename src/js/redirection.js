@@ -72,3 +72,13 @@ function AcessoHomeEmpresasParaTabelaReport() {
 function VoltarTabelaParaHomeEmpresa() {
     location.href = '../views/Home_Empresas.html'
 }
+
+// FUNÇÃO DE REDIRECIONAMENTO DE HOME PARA CONTA
+function homeParaConta() {
+    location.href = '../views/conta.html'
+}
+
+// FUNÇÃO DE REDIRECIONAMENTO DE CONTA PARA HOME
+function contaParaHome() {
+    location.href = '../views/home.html'
+}

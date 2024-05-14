@@ -20,12 +20,12 @@
                 window.location.href='../views/index.html';
                 </script>";
             } else {
-                $_SESSION['id_usuario'] = $resultado['id_citizen'];
+                $_SESSION['id_citizen'] = $resultado['id_citizen'];
                 $_SESSION['cpf'] = $resultado['cpf'];
                 header('Location: ../views/home.html');
             }
         } catch (Exception $e) {
-            echo $e;
+            echo "<script>alert('Ocorreu um erro: ".$e->getMessage()."');</script>";
         }
     }
 ?>

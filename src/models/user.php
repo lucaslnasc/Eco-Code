@@ -1,11 +1,11 @@
 <?php
-    include('../eco-code/database/conexao.php');
+    include('../../database/conexao.php');
 
     function checkIfExists($column, $value){
         global $dbh;
 
         // Prepara a consulta SQL para contar quantas vezes o valor aparece na coluna especificada
-        $query = $dbh->prepare("SELECT COUNT(*) as count FROM usuario WHERE $column = :value");
+        $query = $dbh->prepare("SELECT COUNT(*) as count FROM citizen WHERE $column = :value");
         $query->bindParam(':value', $value); // Substitui o marcador de posição na consulta pelo valor fornecido
         $query->execute(); // Executa a consulta
         $result = $query->fetch(PDO::FETCH_ASSOC); // Obtém o resultado da consulta como um array associativo
