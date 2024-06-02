@@ -44,6 +44,7 @@
 
             header('Location: ../views/index.html');
             exit;
+            
         } catch (PDOException $e) {
             die("Erro ao inserir usuário: " . $e->getMessage());
         }

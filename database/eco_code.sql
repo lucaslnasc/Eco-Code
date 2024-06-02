@@ -9,12 +9,27 @@ CREATE TABLE citizen(
     cpf CHAR (14) NOT NULL UNIQUE,
     ddd VARCHAR (3) NOT NULL,
     telefone VARCHAR (11) NOT NULL,
-    senha VARCHAR (100) NOT NULL,
-    cep VARCHAR (8) NOT NULL,
+    senha VARCHAR (255) NOT NULL,
+    cep VARCHAR (9) NOT NULL,
     endereco VARCHAR(50) NOT NULL,
     bairro VARCHAR(50) NOT NULL,
     num INT(3) NOT NULL,
     cidade VARCHAR(20) NOT NULL
 );
 
-SELECT * FROM citizen;
+CREATE TABLE city_hall(
+	id_city_hall INT AUTO_INCREMENT PRIMARY KEY,
+    razao_social VARCHAR(150) NOT NULL,
+    email VARCHAR (100) NOT NULL UNIQUE,
+    cnpj VARCHAR (18) NOT NULL UNIQUE,
+    ddd VARCHAR (3) NOT NULL,
+    telefone VARCHAR (11) NOT NULL,
+	senha VARCHAR (255) NOT NULL,
+    cep VARCHAR(9) NOT NULL,
+    endereco VARCHAR(50) NOT NULL,
+    bairro VARCHAR(50) NOT NULL,
+    num_city_hall INT(3) NOT NULL,
+    cidade VARCHAR(20) NOT NULL
+);
+
+SELECT * FROM city_hall;

@@ -10,15 +10,15 @@
 <body>
     <div class="container">
         <div class="cont_image">
-            <img class="img_logo" src="../img/image.png " alt="Imagem da logo do projeto">
+            <img class="img_logo" src="../img/image.png" alt="Imagem da logo do projeto">
         </div>
         <div class="form_login_cont">
             <p class="title_form">Acessar</p>
             <br>
             <form action="../controllers/validateUser.php" method="post">
-                <input class="input_form" type="text" name="cpf" id="cpf" placeholder="000.000.000-00" maxlength="14">
+                <input class="input_form" type="text" name="identifier" id="identifier" placeholder="CPF ou CNPJ" required>
                 <br>
-                <input class="input_form" type="password" name="senha" id="senha" placeholder="SENHA">
+                <input class="input_form" type="password" name="senha" id="senha" placeholder="SENHA" required>
                 <br>
                 <div class="link_redirection">
                     <a class="link1" href="redefinir_senha.html">Redefinir senha</a>
@@ -29,6 +29,5 @@
         </div>
         <script src="../js/redirection.js"></script>
     </div>
-    
 </body>
 </html>
