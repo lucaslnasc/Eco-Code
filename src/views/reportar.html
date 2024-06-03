@@ -20,15 +20,15 @@
     <div class="formulario">
       <form action="../controllers/loginConnect.php" method="post" id="cadastroForm">
         <div class="cont1">
-          <label>NOME COMPLETO</label>
+          <label>SELECIONE O OCORRIDO</label>
           <br />
           <input class="style_input_form" type="text" name="nome" id="nome" />
           <br /><br /><br />
-          <label>E-MAIL</label>
+          <label>CEP</label>
           <br />
           <input class="style_input_form" type="email" name="email" id="email" />
           <br /><br /><br />
-          <label>CEP</label>
+          <label>ENDEREÇO</label>
           <br />
           <input class="style_input_form" type="text" name="cep" id="cep" />
           <br /><br /><br />
@@ -40,36 +40,24 @@
           <input class="menor_special_input_form1" type="text" name="n" id="n" />
           <br /><br /><br />
 
-          <label>SENHA</label>
+          <label>CIDADE</label>
           <br />
           <input class="style_input_form" type="password" name="Senha" id="senha" />
         </div>
         <div class="cont2">
-          <label>CPF</label>
+          <label>UF</label>
           <br />
           <input class="style_input_form" type="text" name="cpf" id="cpf" />
           <br /><br /><br />
-          <label>NÚMERO DE TELEFONE</label>
+          <label>DESCREVA O OCORRIDO</label>
           <br />
-          <input class="menor_special_input_form2" type="text" name="ddd" id="ddd" maxlength="3"
-            placeholder="DDD +55" />
-          <input class="special_input_form2" type="text" name="telefone" id="telefone" />
-          <br /><br /><br />
-          <label>ENDEREÇO</label>
-          <br />
-          <input class="style_input_form" type="text" name="endereco" id="endereco" />
-          <br /><br /><br />
-          <label>CIDADE</label>
-          <br />
-          <input class="style_input_form" type="text" name="cidade" id="cidade" />
-          <br /><br /><br />
-
-          <label>CONFIRMAR SENHA</label>
-          <br />
-          <input class="style_input_form" type="password" name="confirmar_senha" id="confirmar_senha" />
-          <br /><br /><br />
-
+          <textarea class="area_txt" name="ocorrido" id="ocorrido"></textarea>
+          <br /><br /><br /><br>
+          <input type="file" name="imagem" id="imagem">
+          <input type="file" name="video" id="video">
+          <br><br><br>
           <input class="save_button_input_form" type="button" value="Salvar" onclick="validarForm()" />
+
         </div>
       </form>
     </div>
