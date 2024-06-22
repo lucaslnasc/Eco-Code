@@ -12,29 +12,29 @@
 <body>
     <div class="container">
         <div class="conteudo">
-            <form class="formulario" action="" method="post">
+            <form class="formulario" action="../controllers/redefinirSenha.php" method="post">
                 <p>REDEFINIR SENHA</p>
 
                 <div class="div_form_inputs">
                     <div class="cont">
                         <label class="label_form_input">CPF</label>
                         <br>
-                        <input class="input_form" type="text" name="cpf" id="cpf" maxlength="14">
+                        <input class="input_form" type="text" name="cpf" id="cpf" maxlength="14" oninput="capsRedefinirSenha()">
                     </div>
                     <div class="cont">
                         <label class="label_form_input">E-mail</label>
                         <br>
-                        <input class="input_form" type="email" name="email" id="email">
+                        <input class="input_form" type="email" name="email" id="email" oninput="capsRedefinirSenha()">
                     </div>
                     <div class="cont">
                         <label class="label_form_input">Insira uma nova senha</label>
                         <br>
-                        <input class="input_form" type="password" name="senha" id="senha" maxlength="20">
+                        <input class="input_form" type="password" name="senha" id="senha" maxlength="20" oninput="capsRedefinirSenha()">
                     </div>
                     <div class="cont">
                         <label class="label_form_input">Insira novamente</label>
                         <br>
-                        <input class="input_form" type="password" name="senha" id="senha" maxlength="20">
+                        <input class="input_form" type="password" name="senha" id="senha" maxlength="20" oninput="capsRedefinirSenha()">
                     </div>
                     <br>
 
@@ -44,6 +44,7 @@
             <button class="backInIndex" onclick="voltarParaIndex()">Voltar</button>
         </div>
         <script src="../js/redirection.js"></script>
+        <script src="../js/formatacaoTXT.js"></script>
     </div>
 </body>
 

@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (!empty($resultado) && password_verify($senha, $resultado['senha'])) {
             $_SESSION['id_citizen'] = $resultado['id_citizen'];
             $_SESSION['cpf'] = $resultado['cpf'];
-            header('Location: ../views/home.html');
+            header('Location: ../views/home.php');
             exit();
         }
 
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (!empty($resultado) && password_verify($senha, $resultado['senha'])) {
             $_SESSION['id_city_hall'] = $resultado['id_city_hall'];
             $_SESSION['cnpj'] = $resultado['cnpj'];
-            header('Location: ../views/home_Empresas.html');
+            header('Location: ../views/home_Empresas.php');
             exit();
         }
 

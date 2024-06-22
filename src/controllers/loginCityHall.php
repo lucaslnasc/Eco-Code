@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $cnpj = $_POST['cnpj'];
     $ddd = $_POST['ddd'];
     $telefone = $_POST['telefone'];
-    $senha = $_POST['senhaPrefeitura'];
+    $senha = $_POST['senha'];
     $cep = $_POST['cep'];
     $endereco = $_POST['endereco'];
     $bairro = $_POST['bairro'];

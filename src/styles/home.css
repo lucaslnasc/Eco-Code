@@ -95,11 +95,17 @@
 }
 
 .icone_user{
-    width: 46%;
-    height: 14vh;
+    margin-left: 25%;
+    width: 18%;
+    height: 15vh;
 }
 
 .icone_user2{
     height: 14vh;
-    transform: translate(530%);
+    margin-left: 25%;
+}
+
+#session_paragraph{
+    color: white;
+    transform: translate(30px, -15px);
 }

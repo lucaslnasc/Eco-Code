@@ -1,7 +1,8 @@
 <?php
+session_start();
 include '../models/user.php';
 
-$query = $dbh->prepare('SELECT ID_REPORT FROM report INNER JOIN citizen ON report.ID_REPORT = citizen.id_citizen;');
+$query = $dbh->prepare('SELECT * FROM report');
 $query->execute();
 $listen = $query->fetchAll();
 ?>
@@ -22,24 +23,32 @@ $listen = $query->fetchAll();
         <nav class="appBar">
             <img class="image_voltar_appBar" src="../img/de-volta.png" onclick="VoltarTabelaParaHomeEmpresa()">
             <h1 class="title_appBar">TABELA DE REPORT</h1>
+            <div class="icone_user">
+                <img src="../img/icone_user.png" alt="" class="icone_user2" onclick="homeParaConta()">
+                <p id="session_paragraph">Bem vindo: <?php
+                    echo $_SESSION['cnpj'];
+                ?></p>
+            </div>
         </nav>
         <div class="conteudo">
             <div class="tabela">
                 <?php
                 foreach ($listen as $list) {
                     echo '<ul>';
-                    echo '<li> Ocorrido: ' . $list['ID_REPORT'] . '</li>';
-                    echo '<li> SELECIONE OCORRIDO: ' . $list['SELECIONE_OCORRIDO'] . '</li>';
-                    echo '<li> CEP LOCAL: ' . $list['CEP_LOCAL'] . '</li>';
-                    echo '<li> UF: ' . $list['UF'] . '</li>';
-                    echo '<li> ENDERECO: ' . $list['ENDERECO'] . '</li>';
-                    echo '<li> BAIRRO: ' . $list['BAIRRO'] . '</li>';
-                    echo '<li> Nº: ' . $list['N'] . '</li>';
-                    echo '<li> CIDADE: ' . $list['CIDADE'] . '</li>';
-                    echo '<li> DESCREVA O OCORRIDO: ' . $liste['DESCREVA_OCORRIDO'] . '</li>';
-                    echo '<li> IMAGEM: ' . $list['IMAGEM'] . '</li>';
-                    echo '<li> VIDEO: ' . $list['VIDEO'] . '</li>';
+                    echo '<li> OCORRIDO: <p class="p_tbl">' . $list['ID_REPORT'] . '</p></li>';
+                    echo '<li> OCORRIDO SELECIONADO: <p class="p_tbl">' . $list['SELECIONE_OCORRIDO'] . '</p></li>';
+                    echo '<li> CEP LOCAL: <p class="p_tbl">' . $list['CEP_LOCAL'] . '</p></li>';
+                    echo '<li> UF: <p class="p_tbl">' . $list['UF'] . '</p></li>';
+                    echo '<li> ENDERECO: <p class="p_tbl">' . $list['ENDERECO'] . '</p></li>';
+                    echo '<li> BAIRRO: <p class="p_tbl">' . $list['BAIRRO'] . '</p></li>';
+                    echo '<li> Nº: <p class="p_tbl">' . $list['N'] . '</p></li>';
+                    echo '<li> CIDADE: <p class="p_tbl">' . $list['CIDADE'] . '</p></li>';
+                    echo '<li> DESCREVA O OCORRIDO: <p class="p_tbl">' . $list['DESCREVA_OCORRIDO'] . '</p></li>';
+                    echo '<li>IMAGEM: <br> <img src = "'.$list['IMAGEM'].'" width="400" height="250"></li>';
+                    echo '<li>Vídeo: <br> <video src = "'.$list['VIDEO'].'" width="400" height="250" controls></video></li>';
+                    echo '<li> GRAU DE RISCO: <p class="p_tbl">' . $list['CRITICIDADE'] . '</p></li>';
                     echo '</ul>';
+                    echo '<hr>';
                 }
                 ?>
 

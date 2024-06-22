@@ -16,7 +16,7 @@
             <p class="title_form">Acessar</p>
             <br>
             <form action="../controllers/validateUser.php" method="post">
-                <input class="input_form" type="text" name="identifier" id="identifier" placeholder="CPF ou CNPJ" required>
+                <input class="input_form" type="text" name="identifier" id="identifier" placeholder="CPF ou CNPJ" required oninput="capsIndex()">
                 <br>
                 <input class="input_form" type="password" name="senha" id="senha" placeholder="SENHA" required>
                 <br>
@@ -28,6 +28,7 @@
             </form>
         </div>
         <script src="../js/redirection.js"></script>
+        <script src="../js/formatacaoTXT.js"></script>
     </div>
 </body>
 </html>

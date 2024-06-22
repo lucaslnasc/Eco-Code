@@ -35,12 +35,12 @@ function Suporte() {
 
 // FUNÇÃO DE REDIRECIONAMENTO DE HOME PARA REPORTAR
 function homeParaReportar() {
-    location.href = '../views/reportar.html'
+    location.href = '../views/reportar.php'
 }
 
 // FUNÇÃO DE REDIRECIONAMENTO DE REPORTAR PARA HOME
 function reportarParaHome() {
-    location.href = '../views/home.html'
+    location.href = '../views/home.php'
 }
 
 // FUNÇÃO DE REDIRECIONAMENTO DE HOME PARA CONFIGURAÇÕES
@@ -50,7 +50,7 @@ function homeParaConfiguracoes() {
 
 // FUNÇÃO DE REDIRECIONAMENTO DE CONFIGURAÇÕES PARA HOME
 function VoltarDeConfParaHomeEmpresas() {
-    location.href = '../views/home.html'
+    location.href = '../views/index.html'
 }
 
 // FUNÇÃO DE REDIRECIONAMENTO DE HOME PARA SUPORTE
@@ -65,20 +65,33 @@ function VoltarDeHomeEmpresasParaLogin() {
 
 // FUNÇÃO DE REDIRECIONAMENTO DE HOME EMPRESAS PARA TABELA DE REPORTE
 function AcessoHomeEmpresasParaTabelaReport() {
-    location.href = '../views/tabela_report.html'
+    location.href = '../views/tabela_report.php'
 }
 
 // FUNÇÃO DE REDIRECIONAMENTO DE TABELA REPORTE PARA HOME EMPRESAS
 function VoltarTabelaParaHomeEmpresa() {
-    location.href = '../views/Home_Empresas.html'
+    location.href = '../views/Home_Empresas.php'
 }
 
 // FUNÇÃO DE REDIRECIONAMENTO DE HOME PARA CONTA
 function homeParaConta() {
-    location.href = '../views/conta.html'
+    location.href = '../views/conta.php'
+}
+
+function homeParaConta2() {
+    location.href = '../views/contaPJ.php'
 }
 
 // FUNÇÃO DE REDIRECIONAMENTO DE CONTA PARA HOME
 function contaParaHome() {
-    location.href = '../views/home.html'
+    location.href = '../views/home.php'
+}
+
+function contaParaHome2() {
+    location.href = '../views/Home_Empresas.php'
+}
+
+// FUNÇÃO DE REDIRECIONAMENTO DE SUPORTE PARA INDEX
+function VoltarSuporteParaCadastreSe() {
+    location.href = '../views/index.html'
 }

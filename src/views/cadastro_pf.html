@@ -22,51 +22,51 @@
         <div class="cont1">
           <label>NOME COMPLETO</label>
           <br />
-          <input class="style_input_form" type="text" name="nome" id="nome" />
+          <input class="style_input_form" type="text" name="nome" id="nome" oninput="capsCadastroPf()" />
           <br /><br /><br />
           <label>E-MAIL</label>
           <br />
-          <input class="style_input_form" type="email" name="email" id="email" />
+          <input class="style_input_form" type="email" name="email" id="email" oninput="capsCadastroPf()" />
           <br /><br /><br />
           <label>CEP</label>
           <br />
-          <input class="style_input_form" type="text" name="cep" id="cep" />
+          <input class="style_input_form" type="text" name="cep" id="cep" maxlength="9" oninput="capsCadastroPf()" />
           <br /><br /><br />
 
           <label>BAIRRO</label>
           <label class="numero_input_form">Nº</label>
           <br />
-          <input class="special_input_form1" type="text" name="bairro" id="bairro" />
-          <input class="menor_special_input_form1" type="text" name="n" id="n" />
+          <input class="special_input_form1" type="text" name="bairro" id="bairro" oninput="capsCadastroPf()" />
+          <input class="menor_special_input_form1" type="text" name="n" id="n" oninput="capsCadastroPf()" />
           <br /><br /><br />
 
           <label>SENHA</label>
           <br />
-          <input class="style_input_form" type="password" name="senha" id="senha" />
+          <input class="style_input_form" type="password" name="senha" id="senha" oninput="capsCadastroPf()" />
         </div>
         <div class="cont2">
           <label>CPF</label>
           <br />
-          <input class="style_input_form" type="text" name="cpf" id="cpf" />
+          <input class="style_input_form" type="text" name="cpf" id="cpf" maxlength="11" oninput="capsCadastroPf()" />
           <br /><br /><br />
           <label>NÚMERO DE TELEFONE</label>
           <br />
           <input class="menor_special_input_form2" type="text" name="ddd" id="ddd" maxlength="3"
-            placeholder="DDD +55" />
-          <input class="special_input_form2" type="text" name="telefone" id="telefone" />
+            placeholder="DDD +55" oninput="capsCadastroPf()" />
+          <input class="special_input_form2" type="text" name="telefone" id="telefone" oninput="capsCadastroPf()" />
           <br /><br /><br />
           <label>ENDEREÇO</label>
           <br />
-          <input class="style_input_form" type="text" name="endereco" id="endereco" />
+          <input class="style_input_form" type="text" name="endereco" id="endereco" oninput="capsCadastroPf()" />
           <br /><br /><br />
           <label>CIDADE</label>
           <br />
-          <input class="style_input_form" type="text" name="cidade" id="cidade" />
+          <input class="style_input_form" type="text" name="cidade" id="cidade" oninput="capsCadastroPf()" />
           <br /><br /><br />
 
           <label>CONFIRMAR SENHA</label>
           <br />
-          <input class="style_input_form" type="password" name="confirmar_senha" id="confirmar_senha" />
+          <input class="style_input_form" type="password" name="confirmar_senha" id="confirmar_senha" oninput="capsCadastroPf()" />
           <br /><br /><br />
 
           <input class="save_button_input_form" type="submit" value="Salvar" onclick="validarForm()" />
@@ -75,6 +75,7 @@
     </div>
   </div>
   <script src= "../js/redirection.js"></script>
+  <script src="../js/formatacaoTXT.js"></script>
 </body>
 
 </html>

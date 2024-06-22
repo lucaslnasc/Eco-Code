@@ -20,23 +20,23 @@
                 <div class="cont1">
                     <label>RAZÃO SOCIAL</label>
                     <br>
-                    <input class="style_input_form" type="text" name="razao_social" id="razao_social">
+                    <input class="style_input_form" type="text" name="razao_social" id="razao_social" oninput="formatInputCAEP()">
                     <br><br><br>
                     <label>E-MAIL</label>
                     <br>
-                    <input class="style_input_form" type="email" name="email" id="email">
+                    <input class="style_input_form" type="email" name="email" id="email" oninput="formatInputCAEP()">
                     <br><br><br>
                     <label>CEP</label>
                     <br>
-                    <input class="style_input_form" type="text" name="cep" id="cep">
+                    <input class="style_input_form" type="text" name="cep" id="cep" oninput="formatInputCAEP()">
                     <br><br><br>
 
 
                     <label>BAIRRO</label>
                     <label class="numero_input_form">Nº</label>
                     <br>
-                    <input class="special_input_form1" type="text" name="bairro" id="bairro">
-                    <input class="menor_special_input_form1" type="text" name="num_city_hall" id="n">
+                    <input class="special_input_form1" type="text" name="bairro" id="bairro" oninput="formatInputCAEP()">
+                    <input class="menor_special_input_form1" type="text" name="num_city_hall" id="n" oninput="formatInputCAEP()">
                     <br><br><br>
 
                     <label>SENHA</label>
@@ -48,21 +48,21 @@
                 <div class="cont2">
                     <label>CNPJ</label>
                     <br>
-                    <input class="style_input_form" type="text" name="cnpj" id="cnpj">
+                    <input class="style_input_form" type="text" name="cnpj" id="cnpj" oninput="formatInputCAEP()">
                     <br><br><br>
                     <label>NÚMERO DE TELEFONE</label>
                     <br>
                     <input class="menor_special_input_form2" type="text" name="ddd" id="ddd" placeholder="DDD +55"
-                        maxlength="3">
-                    <input class="special_input_form2" type="text" name="telefone" id="telefone">
+                        maxlength="3" oninput="formatInputCAEP()">
+                    <input class="special_input_form2" type="text" name="telefone" id="telefone" oninput="formatInputCAEP()">
                     <br><br><br>
                     <label>ENDEREÇO</label>
                     <br>
-                    <input class="style_input_form" type="text" name="endereco" id="endereco">
+                    <input class="style_input_form" type="text" name="endereco" id="endereco" oninput="formatInputCAEP()">
                     <br><br><br>
                     <label>CIDADE</label>
                     <br>
-                    <input class="style_input_form" type="text" name="cidade" id="cidade">
+                    <input class="style_input_form" type="text" name="cidade" id="cidade" oninput="formatInputCAEP()">
                     <br><br><br>
 
                     <label>CONFIRMAR SENHA</label>
@@ -76,6 +76,7 @@
         </div>
     </div>
     <script src="../js/redirection.js"></script>
+    <script src="../js/formatacaoTXT.js"></script>
 </body>
 
 </html>
