@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="../styles/cadastro_pf.css" />
   <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon">
   <title>Cadastro Pessoa Física</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 </head>
 
 <body>
@@ -47,13 +49,13 @@
         <div class="cont2">
           <label>CPF</label>
           <br />
-          <input class="style_input_form" type="text" name="cpf" id="cpf" maxlength="11" oninput="capsCadastroPf()" />
+          <input class="style_input_form" type="text" name="cpf" id="cpf" maxlength="14" oninput="capsCadastroPf()" />
           <br /><br /><br />
           <label>NÚMERO DE TELEFONE</label>
           <br />
           <input class="menor_special_input_form2" type="text" name="ddd" id="ddd" maxlength="3"
             placeholder="DDD +55" oninput="capsCadastroPf()" />
-          <input class="special_input_form2" type="text" name="telefone" id="telefone" oninput="capsCadastroPf()" />
+          <input class="special_input_form2" type="text" name="telefone" id="telefone" maxlength="11" oninput="capsCadastroPf()" />
           <br /><br /><br />
           <label>ENDEREÇO</label>
           <br />
@@ -74,8 +76,18 @@
       </form>
     </div>
   </div>
+  
   <script src= "../js/redirection.js"></script>
   <script src="../js/formatacaoTXT.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $('#cpf').mask('000.000.000-00');
+      $('#cep').mask('00000-000');
+      $('#telefone').mask('00000000000')
+    });
+  </script>
+
 </body>
 
 </html>
