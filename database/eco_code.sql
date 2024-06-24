@@ -16,14 +16,9 @@ CREATE TABLE citizen(
     num INT(3) NOT NULL,
     cidade VARCHAR(20) NOT NULL
 );
-INSERT INTO citizen (nome_completo, email, cpf, ddd, telefone, senha, cep, endereco, bairro, num, cidade)
-VALUES
-('RUAN SILVA', 'RUANSILVA@GMAIL.COM', '22210944854', '555', '27039238495', 'RUAN.ACESSO', '11201943', 'RUA NOVA ZELÂNDIA', 'VILA DO ASTRONAUTA', '21', 'CANOAS');
-SELECT id_citizen, nome_completo, cpf, email, telefone, cidade, bairro, cep, num FROM citizen WHERE cpf = :cpf;
-UPDATE citizen SET senha = '' WHERE cpf = '';
-DELETE FROM citizen;
-CREATE VIEW VW_CONTA AS SELECT id_citizen, nome_completo, cpf, email, telefone, cidade, bairro, cep, num FROM citizen WHERE cpf = '';
-DROP VIEW VW_CONTA;
+
+CREATE VIEW VW_CONTA AS SELECT id_citizen, nome_completo, cpf, email, telefone, cidade, bairro, cep, num FROM citizen;
+
 SELECT * FROM VW_CONTA;
 SELECT * FROM citizen;
 
@@ -83,11 +78,5 @@ CREATE TABLE report (
 -- ALAGAMENTO {ALTA}
 -- ENTULHO {MÉDIA}
 -- FIAÇÃO {BAIXA}
-INSERT INTO repoAcontecimento (REPOSITORIO_SO) VALUES ('ACÚMULO DE LIXO'), ('DESABAMENTO'), ('ALAGAMENTO'), ('ENTULHO'), ('FIAÇÃO');
-
-INSERT INTO report (SELECIONE_OCORRIDO, CEP_LOCAL, UF, ENDERECO, BAIRRO, N, CIDADE, DESCREVA_OCORRIDO, IMAGEM, VIDEO, CRITICIDADE) 
-VALUES
-('ENTULHO', '29116080', 
-'ES', 'RUA AFÔNCIO DINIZ', 'VILA NOVA', '14', 'NOVO RENASCIMENTO', 'O ALAGAMENTO OCORREU ÁS 21:45 DEPOIS QUE TODOS FORAM DORMIR', 'casaimg.png', 'video.video', 'BAIXO');
 
 SELECT * FROM report;
