@@ -76,6 +76,7 @@ form{
     border-color: gray;
     border-style: solid;
     padding-left: 5px;
+    font-size: 15pt;
 }
 
 .special_input_form2{
@@ -86,6 +87,7 @@ form{
     border-style: solid;
     padding-left: 5px;
     margin-left: 8px;
+    font-size: 15pt;
 }
 
 .menor_special_input_form1{
@@ -96,6 +98,7 @@ form{
     border-color: gray;
     padding-left: 5px;
     margin-left: 8px;
+    font-size: 15pt;
 }
 .menor_special_input_form2{
     width: 25%;
@@ -104,6 +107,7 @@ form{
     border-style: solid;
     border-color: gray;
     padding-left: 5px;
+    font-size: 15pt;
 }
 
 .save_button_input_form{

@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="../styles/reportar.css" />
   <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon">
   <title>Reportar</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 </head>
 
 <body>
@@ -94,6 +96,12 @@
   </div>
   <script src="../js/redirection.js"></script>
   <script src="../js/formatacaoTXT.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#CEP_LOCAL').mask('00000-000');
+    });
+  </script>
 </body>
 
 </html>

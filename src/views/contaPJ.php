@@ -1,10 +1,18 @@
 <?php
 session_start();
-include '../models/user.php';
+include '../models/user.php'; // Inclua aqui a conexão com o banco de dados
 
-$query = $dbh->prepare('SELECT * FROM VW_CONTA;');
-$query->execute();
-$resultList = $query->fetchAll();
+// Conecte ao banco de dados
+try {
+    // Prepare a consulta
+    $query = $dbh->prepare('SELECT id_city_hall, razao_social, cnpj, email, telefone, cidade, bairro, cep, num_city_hall FROM city_hall WHERE cnpj = :cnpj');
+    $query->bindParam(':cnpj', $_SESSION['cnpj'], PDO::PARAM_STR);
+    $query->execute();
+    $resultList = $query->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    echo 'Erro: ' . $e->getMessage();
+    exit;
+}
 ?>
 
 <!DOCTYPE html>
@@ -19,9 +27,8 @@ $resultList = $query->fetchAll();
 </head>
 
 <body>
-    <form action="">
-        <div class="container">
-            <nav class="app-Bar">
+    <div class="container">
+    <nav class="app-Bar">
                 <img class="image_voltar_appBar" src="../img/de-volta.png" conta onclick="contaParaHome2()">
                 <label for="" class="title_appBar">Conta</label>
                 <div class="icone_user">
@@ -31,79 +38,30 @@ $resultList = $query->fetchAll();
                     ?></p>
                 </div>
             </nav>
-            <div class="childrens_container"><br><br>
-                <div class="child"><label for="" class="grey">Nome: <?php
-                foreach ($resultList as $list) {
-                    echo $list['nome_completo'];
+        <div class="account">
+            <div class="tabela">
+                <?php
+                if (!empty($resultList)) {
+                    foreach ($resultList as $list) {
+                        echo '<ul>';
+                        echo '<li>CÓDIGO: ' . htmlspecialchars($list['id_city_hall']) . '</li>';
+                        echo '<li>RAZÃO SOCIAL: ' . htmlspecialchars($list['razao_social']) . '</li>';
+                        echo '<li>CNPJ: ' . htmlspecialchars($list['cnpj']) . '</li>';
+                        echo '<li>EMAIL: ' . htmlspecialchars($list['email']) . '</li>';
+                        echo '<li>TELEFONE: ' . htmlspecialchars($list['telefone']) . '</li>';
+                        echo '<li>CIDADE: ' . htmlspecialchars($list['cidade']) . '</li>';
+                        echo '<li>BAIRRO: ' . htmlspecialchars($list['bairro']) . '</li>';
+                        echo '<li>CEP: ' . htmlspecialchars($list['cep']) . '</li>';
+                        echo '<li>Nº: ' . htmlspecialchars($list['num_city_hall']) . '</li>';
+                        echo '</ul>';
+                    }
+                } else {
+                    echo '<p>Nenhuma informação encontrada para o CNPJ fornecido.</p>';
                 }
-                ?></label></div>
-                <div class="child"><label for="" class="grey">CNPJ:
-                        <?php
-                        foreach ($resultList as $list) {
-                            echo $list['cnpj'];
-                        }
-                        ?>
-                    </label></div>
-                <div class="child"><label for="">E-Mail:
-                        <?php
-                        foreach ($resultList as $list) {
-                            echo $list['email'];
-                        }
-                        ?>
-                    </label></div>
-                <div class="child"><label for="">Telefone:
-                        <?php
-                        foreach ($resultList as $list) {
-                            echo $list['telefone'];
-                        }
-                        ?>
-                    </label></div><br>
-                <div class="child"><label for="" class="endereco"><b>Endereço</b></label></div>
-                <div class="child"><label for="">Cidade:
-                        <?php
-                        foreach ($resultList as $list) {
-                            echo $list['cidade'];
-                        }
-                        ?>
-                    </label></div>
-                <div class="child"><label for="">Bairro:
-                        <?php
-                        foreach ($resultList as $list) {
-                            echo $list['bairro'];
-                        }
-                        ?>
-                    </label></div>
-                <div class="child"><label for="">Cep:
-                        <?php
-                        foreach ($resultList as $list) {
-                            echo $list['cep'];
-                        }
-                        ?>
-                    </label></div>
-                <div class="child"><label for="">N°:
-                        <?php
-                        foreach ($resultList as $list) {
-                            echo $list['num'];
-                        }
-                        ?>
-                    </label></div>
-                <div class="child"><label for="">UF: ES</label></div>
-
-                <div class="lateral_right">
-                    <button class="bt_one" onclick="">
-                        <img src="../img/lapis.png" alt="" class="img_lapis">
-                    </button><br>
-                    <button class="bt_one" onclick="">
-                        <img src="../img/lapis.png" alt="" class="img_lapis">
-                    </button><br>
-                    <button class="bt">
-                        <img src="../img/lapis.png" alt="" class="img_lapis">
-                    </button>
-                </div>
+                ?>
             </div>
         </div>
-    </form>
-    <script src="../js/redirection.js"></script>
+        <script src="../js/redirection.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon">
     <title>Login</title>
 </head>
+
 <body>
     <div class="container">
         <div class="cont_image">
@@ -16,7 +18,8 @@
             <p class="title_form">Acessar</p>
             <br>
             <form action="../controllers/validateUser.php" method="post">
-                <input class="input_form" type="text" name="identifier" id="identifier" placeholder="CPF ou CNPJ" required oninput="capsIndex()">
+                <input class="input_form" type="text" name="identifier" id="identifier" maxlength="14" placeholder="CPF ou CNPJ"
+                    required oninput="capsIndex()">
                 <br>
                 <input class="input_form" type="password" name="senha" id="senha" placeholder="SENHA" required>
                 <br>
@@ -31,4 +34,5 @@
         <script src="../js/formatacaoTXT.js"></script>
     </div>
 </body>
+
 </html>

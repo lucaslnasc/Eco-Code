@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/redefinir_senha.css">
     <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <title>Redefinir Senha</title>
 </head>
 
@@ -29,12 +31,12 @@
                     <div class="cont">
                         <label class="label_form_input">Insira uma nova senha</label>
                         <br>
-                        <input class="input_form" type="password" name="senha" id="senha" maxlength="20" oninput="capsRedefinirSenha()">
+                        <input class="input_form" type="password" name="senha" id="senha" maxlength="20">
                     </div>
                     <div class="cont">
                         <label class="label_form_input">Insira novamente</label>
                         <br>
-                        <input class="input_form" type="password" name="senha" id="senha" maxlength="20" oninput="capsRedefinirSenha()">
+                        <input class="input_form" type="password" name="senha" id="senha" maxlength="20">
                     </div>
                     <br>
 
@@ -45,6 +47,11 @@
         </div>
         <script src="../js/redirection.js"></script>
         <script src="../js/formatacaoTXT.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#cpf').mask('000.000.000-00');
+            });
+        </script>
     </div>
 </body>
 

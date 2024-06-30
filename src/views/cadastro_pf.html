@@ -32,7 +32,7 @@
           <br /><br /><br />
           <label>CEP</label>
           <br />
-          <input class="style_input_form" type="text" name="cep" id="cep" maxlength="9" oninput="capsCadastroPf()" />
+          <input class="style_input_form" type="text" name="cep" id="cep" oninput="capsCadastroPf()" />
           <br /><br /><br />
 
           <label>BAIRRO</label>
@@ -44,7 +44,7 @@
 
           <label>SENHA</label>
           <br />
-          <input class="style_input_form" type="password" name="senha" id="senha" oninput="capsCadastroPf()" />
+          <input class="style_input_form" type="password" name="senha" id="senha" />
         </div>
         <div class="cont2">
           <label>CPF</label>
@@ -53,9 +53,9 @@
           <br /><br /><br />
           <label>NÚMERO DE TELEFONE</label>
           <br />
-          <input class="menor_special_input_form2" type="text" name="ddd" id="ddd" maxlength="3"
+          <input class="menor_special_input_form2" type="text" name="ddd" id="ddd"
             placeholder="DDD +55" oninput="capsCadastroPf()" />
-          <input class="special_input_form2" type="text" name="telefone" id="telefone" maxlength="11" oninput="capsCadastroPf()" />
+          <input class="special_input_form2" type="text" name="telefone" id="telefone" oninput="capsCadastroPf()" />
           <br /><br /><br />
           <label>ENDEREÇO</label>
           <br />
@@ -68,7 +68,7 @@
 
           <label>CONFIRMAR SENHA</label>
           <br />
-          <input class="style_input_form" type="password" name="confirmar_senha" id="confirmar_senha" oninput="capsCadastroPf()" />
+          <input class="style_input_form" type="password" name="confirmar_senha" id="confirmar_senha" />
           <br /><br /><br />
 
           <input class="save_button_input_form" type="submit" value="Salvar" onclick="validarForm()" />
@@ -82,9 +82,9 @@
   
   <script>
     $(document).ready(function(){
-      $('#cpf').mask('000.000.000-00');
+      //$('#cpf').mask('000.000.000-00');
       $('#cep').mask('00000-000');
-      $('#telefone').mask('00000000000')
+      $('#telefone').mask('(00) 00000-0000')
     });
   </script>
 

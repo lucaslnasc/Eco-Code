@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/cadastro_empresa_Prefeitura.css">
     <title>Cadastro De Empresas e Prefeituras</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +22,8 @@
                 <div class="cont1">
                     <label>RAZÃO SOCIAL</label>
                     <br>
-                    <input class="style_input_form" type="text" name="razao_social" id="razao_social" oninput="formatInputCAEP()">
+                    <input class="style_input_form" type="text" name="razao_social" id="razao_social"
+                        oninput="formatInputCAEP()">
                     <br><br><br>
                     <label>E-MAIL</label>
                     <br>
@@ -35,8 +38,10 @@
                     <label>BAIRRO</label>
                     <label class="numero_input_form">Nº</label>
                     <br>
-                    <input class="special_input_form1" type="text" name="bairro" id="bairro" oninput="formatInputCAEP()">
-                    <input class="menor_special_input_form1" type="text" name="num_city_hall" id="n" oninput="formatInputCAEP()">
+                    <input class="special_input_form1" type="text" name="bairro" id="bairro"
+                        oninput="formatInputCAEP()">
+                    <input class="menor_special_input_form1" type="text" name="num_city_hall" id="n"
+                        oninput="formatInputCAEP()">
                     <br><br><br>
 
                     <label>SENHA</label>
@@ -48,17 +53,19 @@
                 <div class="cont2">
                     <label>CNPJ</label>
                     <br>
-                    <input class="style_input_form" type="text" name="cnpj" id="cnpj" oninput="formatInputCAEP()">
+                    <input class="style_input_form" type="text" name="cnpj" id="cnpj" oninput="formatInputCAEP()" maxlength="14">
                     <br><br><br>
                     <label>NÚMERO DE TELEFONE</label>
                     <br>
                     <input class="menor_special_input_form2" type="text" name="ddd" id="ddd" placeholder="DDD +55"
                         maxlength="3" oninput="formatInputCAEP()">
-                    <input class="special_input_form2" type="text" name="telefone" id="telefone" oninput="formatInputCAEP()">
+                    <input class="special_input_form2" type="text" name="telefone" id="telefone"
+                        oninput="formatInputCAEP()">
                     <br><br><br>
                     <label>ENDEREÇO</label>
                     <br>
-                    <input class="style_input_form" type="text" name="endereco" id="endereco" oninput="formatInputCAEP()">
+                    <input class="style_input_form" type="text" name="endereco" id="endereco"
+                        oninput="formatInputCAEP()">
                     <br><br><br>
                     <label>CIDADE</label>
                     <br>
@@ -77,6 +84,14 @@
     </div>
     <script src="../js/redirection.js"></script>
     <script src="../js/formatacaoTXT.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            //$('#cnpj').mask('00.000.000/0000-00');
+            $('#cep').mask('00000-000');
+            $('#telefone').mask('(00) 00000-0000')
+        });
+    </script>
 </body>
 
 </html>

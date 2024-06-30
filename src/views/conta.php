@@ -1,10 +1,18 @@
 <?php
 session_start();
-include '../models/user.php';
+include '../models/user.php'; // Inclua aqui a conexão com o banco de dados
 
-$query = $dbh->prepare('SELECT * FROM VW_CONTA;');
-$query->execute();
-$resultList = $query->fetchAll();
+// Conecte ao banco de dados
+try {
+    // Prepare a consulta
+    $query = $dbh->prepare('SELECT id_citizen, nome_completo, cpf, email, telefone, cidade, bairro, cep, num FROM citizen WHERE cpf = :cpf');
+    $query->bindParam(':cpf', $_SESSION['cpf'], PDO::PARAM_STR);
+    $query->execute();
+    $resultList = $query->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    echo 'Erro: ' . $e->getMessage();
+    exit;
+}
 ?>
 
 <!DOCTYPE html>
@@ -21,40 +29,37 @@ $resultList = $query->fetchAll();
 <body>
     <div class="container">
         <nav class="app-Bar">
-            <img class="image_voltar_appBar" src="../img/de-volta.png" conta onclick="contaParaHome()">
+            <img class="image_voltar_appBar" src="../img/de-volta.png" onclick="contaParaHome()">
             <label for="" class="title_appBar">Conta</label>
             <div class="icone_user">
                 <img src="../img/icone_user.png" alt="" class="icone_user2" onclick="homeParaConta()">
-                <p id="session_paragraph">Bem vindo: <?php
-                echo $_SESSION['cpf'];
-                ?></p>
+                <p id="session_paragraph">Bem vindo: <?php echo $_SESSION['cpf']; ?></p>
             </div>
         </nav>
         <div class="account">
-        <div class="tabela">
+            <div class="tabela">
                 <?php
-                foreach ($resultList as $list) {
-                    echo '<ul>';
-                    echo '<li> Ocorrido: ' . $list['ID_REPORT'] . '</li>';
-                    echo '<li> OCORRIDO SELECIONADO: ' . $list['SELECIONE_OCORRIDO'] . '</li>';
-                    echo '<li> CEP LOCAL: ' . $list['CEP_LOCAL'] . '</li>';
-                    echo '<li> UF: ' . $list['UF'] . '</li>';
-                    echo '<li> ENDERECO: ' . $list['ENDERECO'] . '</li>';
-                    echo '<li> BAIRRO: ' . $list['BAIRRO'] . '</li>';
-                    echo '<li> Nº: ' . $list['N'] . '</li>';
-                    echo '<li> CIDADE: ' . $list['CIDADE'] . '</li>';
-                    echo '<li> DESCREVA O OCORRIDO: ' . $list['DESCREVA_OCORRIDO'] . '</li>';
-                    echo '<li> IMAGEM: ' . $list['IMAGEM'] . '</li>';
-                    echo '<li> VIDEO: ' . $list['VIDEO'] . '</li>';
-                    echo '<li> GRAU DE RISCO: ' . $list['CRITICIDADE'] . '</li>';
-                    echo '</ul>';
-                    echo '<hr>';
+                if (!empty($resultList)) {
+                    foreach ($resultList as $list) {
+                        echo '<ul>';
+                        echo '<li>CÓDIGO: ' . htmlspecialchars($list['id_citizen']) . '</li>';
+                        echo '<li>NOME COMPLETO: ' . htmlspecialchars($list['nome_completo']) . '</li>';
+                        echo '<li>CPF: ' . htmlspecialchars($list['cpf']) . '</li>';
+                        echo '<li>EMAIL: ' . htmlspecialchars($list['email']) . '</li>';
+                        echo '<li>TELEFONE: ' . htmlspecialchars($list['telefone']) . '</li>';
+                        echo '<li>CIDADE: ' . htmlspecialchars($list['cidade']) . '</li>';
+                        echo '<li>BAIRRO: ' . htmlspecialchars($list['bairro']) . '</li>';
+                        echo '<li>CEP: ' . htmlspecialchars($list['cep']) . '</li>';
+                        echo '<li>Nº: ' . htmlspecialchars($list['num']) . '</li>';
+                        echo '</ul>';
+                    }
+                } else {
+                    echo '<p>Nenhuma informação encontrada para o CPF fornecido.</p>';
                 }
                 ?>
-
             </div>
         </div>
-    <script src="../js/redirection.js"></script>
+        <script src="../js/redirection.js"></script>
 </body>
 
 </html>
